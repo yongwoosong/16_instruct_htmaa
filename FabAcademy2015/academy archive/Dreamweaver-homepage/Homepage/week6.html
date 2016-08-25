@@ -1,0 +1,266 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Week6 : Electronics design</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
+		<script src="js/jquery.min.js"></script>
+		<script src="js/jquery.dropotron.min.js"></script>
+		<script src="js/skel.min.js"></script>
+		<script src="js/skel-layers.min.js"></script>
+		<script src="js/init.js"></script>
+		<noscript>
+			<link rel="stylesheet" href="css/skel.css" />
+			<link rel="stylesheet" href="css/style.css" />
+			<link rel="stylesheet" href="css/style-desktop.css" />
+		</noscript>
+		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
+	</head>
+	<body>
+
+		<!-- Header -->
+			<header id="header">
+				<div class="logo container">
+					<div>
+					  <h1><a href="index.html" id="logo">FAB ACADEMY 2015</a></h1>
+						<p>Yongwoo Song</p>
+					</div>
+				</div>
+			</header>
+
+		<!-- Nav -->
+			<nav id="nav" class="skel-layers-fixed">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li class="current">
+						<a href="">Assignments</a>
+						<ul>
+                        	<li><a href="week1.html">Week1 : Principles and practices, project management</a></li>
+							<li><a href="week2.html">Week2 : Computer-aided design</a></li>
+                        	<li><a href="week3.html">Week3 : Computer-controlled cutting</a></li>
+                            <li><a href="week4.html">Week4 : Electronics production</a></li>
+                            <li><a href="week5.html">Week5 : 3D scanning and printing</a></li>
+                            <li><a href="week6.html">Week6 : Electronics design</a></li>
+                            <li><a href="week7.html">Week7 : Embedded programming</a></li>
+                            <li><a href="week8.html">Week8 : Computer controlled machining</a></li>
+                            <li><a href="week9.html">Week9 : Molding and casting</a></li>
+                            <li><a href="week10.html">Week10 : Input devices</a></li>
+                            <li><a href="week11.html">Week11 : Output devices</a></li>
+                            <li><a href="week12.html">Week12 : Composites</a></li>
+                            <li><a href="week13.html">Week13 : Network and communication</a></li>
+                            <li><a href="week14.html">Week14 : Interface and application programming</a></li>
+                            <li><a href="week15.html">Week15 : Applications and implications</a></li>
+                            <li><a href="week16.html">Week16 : Mechanical design, machine design</a></li>
+                            <li><a href="week17.html">Week17 : invention,intellectual property and income</a></li>
+                            
+ 							<li><a href="project.html">Final Project</a></li>
+
+						</ul>
+					</li>
+					
+				  <li><a href="aboutme.html">About me</a></li>
+				</ul>
+			</nav>
+		
+		<!-- Main -->
+			<div id="main-wrapper">
+				<div id="main" class="container">
+					<div class="row">
+						<div class="12u">
+							<div class="content">
+							
+								<!-- Content -->
+						
+									<article class="box page-content">
+										<!-- Week assignment --> 
+										<header>
+											<h2>6. Electronics design</h2>
+											<p> Re-draw the echo hello-board, add (at least) a button and LED </p>
+                                            <p> Check the design rules, and make it extra credit : simulate its operation </p>
+										</header>
+									
+                                        <!-- Fab Documentatioin -->
+                                        <section>
+                                        <p dir="ltr">First, i installed eagle followed by the link from Fab Academy. Here are the menus where i could check my libraries that are needed for this week&rsquo;s assignment. </p>
+                                          <br>
+<table width="320" border="5" cellspacing="5" cellpadding="5">
+                    <tr>
+                                                <td><div align="center"><img src="images/6-1.jpg" alt="" width="480" height="320"></div></p></td>
+                                                <td><div align="center"><img src="images/6-2.jpg" alt="" width="480" height="320"></div></p></td>
+                                              </tr>
+                                              <tr>
+                                                <td><p align="center" dir="ltr"><strong>Loading the Eagle library</strong></p></td>
+                                                <td><p align="center" dir="ltr"><strong>Loading Helle.Echo board</strong></p></td>
+                                              </tr>
+                                          </table>
+                                          <p dir="ltr"> Menus where i could check my libraries that are needed for this week&rsquo;s assignment are shown below. &nbsp;Loading the library and unzipped at applications/Eagle 7-2.0/lbr and from the file menu i could check the library folders. This week i worked with helloworld.isp board and with the board tried to put 2 resistors and LED.
+Checking both schematic view and board view to understand the concept of circuit.                                          </p>
+                                          <table width="320" border="5" cellspacing="5" cellpadding="5">
+                                              <tr>
+                                                <td><div align="center"><img src="images/6-3.jpg" alt="" width="480" height="320"></div></p></td>
+                                                <td><div align="center"><img src="images/6-4.jpg" alt="" width="480" height="320"></div></p></td>
+                                              </tr>
+                                              <tr>
+                                                <td><p align="center" dir="ltr"><strong>Schematic and Design view</strong></p></td>
+                                                <td><p align="center" dir="ltr"><strong>Schematic view of Hello.Echo</strong></p></td>
+                                              </tr>
+                                          </table>
+                                          Getting first started with looking at the board. As getting to know the electronics production and designing It&rsquo;s important to getting used to Eagle program interface. First, I required to load some library that are needed for production. Normally all the components that are needed are in either fab.lbr or ng.lbr folders.
+                                          
+<table width="320" border="5" cellspacing="5" cellpadding="5">
+                   <tr>
+                                                <td><div align="center"><img src="images/6-5.jpg" alt="" width="480" height="320"></div></p></td>
+                                                <td><div align="center"><img src="images/6-6.jpg" alt="" width="480" height="320"></div></p></td>
+                </tr>
+                                              <tr>
+                                                <td><p align="center" dir="ltr"><strong>Design view of first Hello.Echo board</strong></p></td>
+                                                <td><p align="center" dir="ltr"><strong>Moving FTDI headers in design view</strong></p></td>
+                                              </tr>
+                                          </table>
+                                          Moving the 6-pin connectors little bit to the right, so i can make a room for the R3 component. Before moving the component because components are connected in schematic &nbsp;I can see the unrouted path.
+                                    <table width="320" border="5" cellspacing="5" cellpadding="5">
+                   					<tr>
+                                      <td><div align="center"><img src="images/6-8.jpg" alt="" width="480" height="400"></div></p></td>
+                                      <td><div align="center"><img src="images/6-9.jpg" alt="" width="480" height="400"></div></p></td>
+                					</tr>
+                                    <tr>
+                                      <td><p align="center" dir="ltr"><strong>TOP LAYERSHOWN</strong></p></td>
+                                      <td><p align="center" dir="ltr"><strong>EXPORTING THE PNG</strong></p></td>
+                                    </tr>
+                                    </table>
+                                    <p dir="ltr">It&rsquo;s now ready to be exported to PNG file with all the layer for the other components view are gone. </p>
+                                    <br>
+To remove the components, click the view button and set for &lsquo;monochrome&rsquo; and 500 dpi at least. For my board i wanted to be more precise so i changed the setting to 1000 dpi. &nbsp;I&rsquo;ve countered problem with saving exporting image file with &lsquo;out of memory&rsquo; error which I fixed with changing the direction where the files are saved. When the setting is defaulted in EAGLE programme folder this kind of error will happen.
+									<table>
+                                    	<tr>
+                                        	<td><div align="center"><img src="images/6-drc.jpg" alt="" width="480" height="480"></div></td> 
+                                        </tr>
+                                        <tr>
+                                        <td><p align="center" dir="ltr"><strong>CHECKING CLEARANCE(DESIGN CHECK RULES)</strong></p>
+                                        </tr>   
+                                      When doing the design rule check that is optimized for &lsquo;fabmodules&rsquo; I had a clearance problem which means the mill would not cut perfect traces therefor I need to keep distance of left-side trace.
+                                     
+                                    <table width="320" border="5" cellspacing="5" cellpadding="5">
+                   					<tr>
+                                      <td><div align="center"><img src="images/6-10.jpg" alt="" width="480" height="400"></div></p></td>
+                                      <td><div align="center"><img src="images/6-12.jpg" alt="" width="480" height="400"></div></p></td>
+                					</tr>
+                                    <tr>
+                                      <td><p align="center" dir="ltr"><strong>NO5 HELLOBOARD</strong></p></td>
+                                      <td><p align="center" dir="ltr"><strong>BROKEN FTDI HEADER</strong></p></td>
+                                      </tr>
+                                    <tr>
+                                      <td><div align="center"><img src="images/6-13.jpg" alt="" width="480" height="400"></div></p></td>
+                                      <td><div align="center"><img src="images/6-14.jpg" alt="" width="480" height="400"></div></p></td>
+               						</tr>
+                                    <tr>
+                                      <td><p align="center" dir="ltr"><strong>SOLDER FOR JUMPING</strong></p></td>
+                                      <td><p align="center" dir="ltr"><strong>FIRST TRY OF FIXING THE BOARD</strong></p></td>
+                                      </tr>
+                                    </table>
+                                      It&rsquo;s always good to learn from failures and I&rsquo;ve accidentally pulled the board with holding FTDI headers and now It made a disaster. Here are my experiences of fixing the board. Firstly, if the whole pin headers are pulled from the copper plates it can be glued down with glue-gun. Secondly if the traces are uncut from toolpath setting just use plain-cutter to manually cut the traces. Last of all, when the copper traces are worn away use the jumper wire(or solder, which is not recommended) to join traces. </section>                                        
+									</article>
+
+							</div>
+						</div>
+					</div>
+					<div class="row 100%">
+						<div class="12u">
+
+							<!-- Features -->
+								<section class="box features">
+									<h2 class="major"><span>Download files</span></h2>
+									<div>
+										<div class="row">
+											<div class="3u">
+												
+												<!-- Feature -->
+													<section class="box feature">
+														<a href="https://drive.google.com/file/d/0BzGgyuLqbu0FWTlFc0ozTmkxSkE/view?usp=sharing" class="image featured"><img src="images/6-11.jpg"  alt="" height="250" width ="280" /></a>
+														<h3><a href="https://drive.google.com/file/d/0BzGgyuLqbu0FWTlFc0ozTmkxSkE/view?usp=sharing"></a>EAGLE FILE</h3>
+														<p>
+															NO5. Helloboard.syw (Eagle files) 
+														</p>
+													</section>
+										
+											</div>
+											<div class="3u">
+                                            <!-- Feature -->
+													<section class="box feature">
+														<a href="https://drive.google.com/file/d/0BzGgyuLqbu0FN3h3aXRhODVoLVk/view?usp=sharing" class="image featured"><img src="images/6-15.png"  alt="" height="250" width="280" /></a>
+														<h3><a href="https://drive.google.com/file/d/0BzGgyuLqbu0FN3h3aXRhODVoLVk/view?usp=sharing"></a>TRACES</h3>
+														<p>
+															NO5. Helloboard.syw (traces) 
+														</p>
+													</section>
+										
+											</div>
+											<div class="3u">
+                                            <!-- Feature -->
+													<section class="box feature">
+														<a href="https://drive.google.com/file/d/0BzGgyuLqbu0FMUlOSWpHQVhMd1k/view?usp=sharing" class="image featured"><img src="images/6-16.png"  alt="" height="250" width="280" /></a>
+														<h3><a href="https://drive.google.com/file/d/0BzGgyuLqbu0FMUlOSWpHQVhMd1k/view?usp=sharing"></a>OUTLINES</h3>
+														<p>
+															NO5. Helloboard.syw (outlines)  
+														</p>
+													</section>
+										
+											</div>
+											<div class="3u">
+												
+										</div>
+										
+									</div>
+								</section>
+
+						</div>
+					</div>
+				</div>
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer" class="container">
+				<div class="row 100%">
+					<div class="12u">
+
+						<!-- About -->
+							<section>
+								<h2 class="major"><span> References </span></h2>
+								<p>
+									<li> </li>
+								</p>
+							</section>
+
+					</div>
+				</div>
+				<div class="row 200%">
+					<div class="12u">
+
+						<!-- Contact -->
+							<section>
+								<h2 class="major"><span>Get in touch</span></h2>
+								<ul class="contact">
+						<li><a href="https://twitter.com/mata8989" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+						<li><a href="https://www.facebook.com/yongwoo.song.37" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+						<li><a href="https://www.linkedin.com/profile/view?id=357221551&trk=nav_responsive_tab_profile" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
+						<li><a href="https://plus.google.com/u/2/106321315644670974097/posts" class="icon fa-google-plus"><span class="label">Google+</span></a></li>
+								</ul>
+							</section>
+					
+					</div>
+				</div>
+
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul class="menu">
+						<li>&copy; Fab Academy 2015 'How to make almost Anything'. All rights reserved</li><li>Design:Yongwoo Song</li>
+						</ul>
+					</div>
+
+			</footer>
+
+	</body>
+</html>

@@ -1,0 +1,377 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Week 10 : Input devices</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
+		<script src="js/jquery.min.js"></script>
+		<script src="js/jquery.dropotron.min.js"></script>
+		<script src="js/skel.min.js"></script>
+		<script src="js/skel-layers.min.js"></script>
+		<script src="js/init.js"></script>
+		<noscript>
+			<link rel="stylesheet" href="css/skel.css" />
+			<link rel="stylesheet" href="css/style.css" />
+			<link rel="stylesheet" href="css/style-desktop.css" />
+		</noscript>
+		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
+	</head>
+	<body>
+
+		<!-- Header -->
+			<header id="header">
+				<div class="logo container">
+					<div>
+						<h1><a href="index.html" id="logo">FAB ACADEMY 2015</a></h1>
+						<p>Yongwoo Song</p>
+					</div>
+				</div>
+			</header>
+
+		<!-- Nav -->
+			<nav id="nav" class="skel-layers-fixed">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li class="current">
+						<a href="">Assignments</a>
+						<ul>
+                        	<li><a href="week1.html">Week1 : Principles and practices, project management</a></li>
+							<li><a href="week2.html">Week2 : Computer-aided design</a></li>
+                        	<li><a href="week3.html">Week3 : Computer-controlled cutting</a></li>
+                            <li><a href="week4.html">Week4 : Electronics production</a></li>
+                            <li><a href="week5.html">Week5 : 3D scanning and printing</a></li>
+                            <li><a href="week6.html">Week6 : Electronics design</a></li>
+                            <li><a href="week7.html">Week7 : Embedded programming</a></li>
+                            <li><a href="week8.html">Week8 : Computer controlled machining</a></li>
+                            <li><a href="week9.html">Week9 : Molding and casting</a></li>
+                            <li><a href="week10.html">Week10 : Input devices</a></li>
+                            <li><a href="week11.html">Week11 : Output devices</a></li>
+                            <li><a href="week12.html">Week12 : Composites</a></li>
+                            <li><a href="week13.html">Week13 : Network and communication</a></li>
+                            <li><a href="week14.html">Week14 : Interface and application programming</a></li>
+                            <li><a href="week15.html">Week15 : Applications and implications</a></li>
+                            <li><a href="week16.html">Week16 : Mechanical design, machine design</a></li>
+                            <li><a href="week17.html">Week17 : invention,intellectual property and income</a></li>
+                            
+ 							<li><a href="project.html">Final Project</a></li>
+
+						</ul>
+					</li>
+					
+				  <li><a href="aboutme.html">About me</a></li>
+				</ul>
+			</nav>
+		
+		<!-- Main -->
+			<div id="main-wrapper">
+				<div id="main" class="container">
+					<div class="row">
+						<div class="12u">
+							<div class="content">
+							
+								<!-- Content -->
+						
+									<article class="box page-content">
+
+										<!-- Week assignment --> 
+										<header>
+											<h2>10. Input devices </h2>
+											<p> Add an output device to a microcontroller board you've designed and program it to do something </p>
+										</header>
+									
+                                        <!-- Fab Documentatioin -->
+                                        <section>
+                                          <p dir="ltr">For this week i watched the reference of touchpad website on Fab Academy schedule page. </p>
+                                          <p dir="ltr">Trying very similar and my intention is to make some kind of touchpad.</p>
+                                          <br>
+                                          <h2 dir="ltr">Comparing pinouts </h2>
+									      <div dir="ltr">
+                                            <table width="320" border="5" cellspacing="5" cellpadding="5">
+                                              <tr>
+                                                <td><h3 dir="ltr">[Neil&rsquo;s step response]</h3>
+                                                  <p dir="ltr">PB5</p>
+                                                  <p dir="ltr">PB3 (shield/step/charge pin)</p>
+                                                  <p dir="ltr">PB4 (sense pin)</p>
+                                                  <p dir="ltr">GND</p>
+                                                  <p dir="ltr">VCC </p>
+                                                  <p dir="ltr">PB2 : receive pin rx </p>
+                                                  <p dir="ltr">PB1 </p>
+                                                  <p dir="ltr">PB0 </p></td>
+                                                <td><h3 dir="ltr">[Yongwoo&rsquo;s trial] </h3>
+                                                  <p dir="ltr">PB5 : PCINT5/reset/dw </p>
+                                                  <p dir="ltr">PB3 (shield/step/charge pin)</p>
+                                                  <p dir="ltr">PB4 (sense pin)</p>
+                                                  <p dir="ltr">GND</p>
+                                                  <p dir="ltr">VCC </p>
+                                                  <p dir="ltr">PB2 : receive pin rx </p>
+                                                  <p dir="ltr">PB1 </p>
+                                                  <p dir="ltr">PB0 </p>
+                                                  <br></td>
+                                                <td><h3 dir="ltr">[RXTX] &nbsp;</h3>
+                                                  <p dir="ltr">Attiny 45IS x 1 </p>
+                                                  <p dir="ltr">3X2 Pin Header (ARVISP SMD) x 1 </p>
+                                                  <p dir="ltr">2X2 Pin Header SMD x 1 </p>
+                                                  <p dir="ltr">FTDI Header SMD x 1 </p>
+                                                  <p dir="ltr">10k Ohm resistor RES-US1206fab x 1 </p>
+                                                  <p dir="ltr">1m Ohm resistor RES-US1206fab x 2 </p>
+                                                  <p dir="ltr">Capacitor 1 uf x 1 </p>
+                                                  <h4 dir="ltr">[RXTX PAD = My Touchpad] </h4>
+                                                  <p dir="ltr">2X2 Pin Header SMD x 1 </p></td>
+                                              </tr>
+                                            </table>
+                                          </div>
+                                          <br>
+                                          <p dir="ltr">I&rsquo;ve finally redesigned my board and made additionally the touchpad that connects RX, TX. Basically my intention is to create a connection between touchpad and input so later on with redesigned touchpad with arrow cursors it can be used for final project of my thing.</p>
+                                          <br>
+                                          <div dir="ltr">
+                                            <table width="320" border="5" cellspacing="5" cellpadding="5">
+                                              <tr>
+                                                <td><div align="center"><img src="images/10-1.jpg" alt="" width="320" height="320"></div></p></td>
+                                                <td><div align="center"><img src="images/10-2.jpg" alt="" width="320" height="320"></div></p></td>
+                                                <td><div align="center"><img src="images/10-3.jpg" alt="" width="320" height="320"></div></p></td>
+                                              </tr>
+                                              <tr>
+                                                <td><p align="center"dir="ltr"><strong>Step.response (Neil&rsquo;s)</strong></p></td>
+                                                <td><p align="center"dir="ltr"><strong>Input re-designed</strong></p></td>
+                                                <td><p align="center"dir="ltr"><strong>Re-designed schematic</strong></p></td>
+                                              </tr>
+                                            </table>
+                                          </div>
+                                          <br>
+                                          <div dir="ltr">
+                                            <table>
+                                              <tr>
+                                                <td><div align="center"><img src="images/10-4.png" alt="" width="320" height="320"></div></p></td>
+                                                <td><div align="center"><img src="images/10-5.png" alt="" width="320" height="320"></div></p></td>
+                                              </tr>
+                                              <tr>
+                                                <td><p align="center"dir="ltr"><strong>INPUT.STEP RESPONSE(re-design)</strong></p></td>
+                                                <td><p align="center"dir="ltr"><strong>INPUT.STEP RESPONSE(re-design)</strong></p></td>
+                                              </tr>
+                                            </table>
+                                          </div>
+                                          <br>
+                                          <br>
+                                          <h3 dir="ltr">Terminal command (Mac OS X) </h3>
+                                          <p dir="ltr"> </p>
+                                          <p dir="ltr">Setting up PySerial (Macintosh) </p>
+                                          <ul>
+                                            <li dir="ltr">
+                                              <p dir="ltr">move to the directory and install pyserial</p>
+                                            </li>
+                                            <li dir="ltr">
+                                              <p dir="ltr">sudo python setup.py install // directory must be moved to where setup.py is placed</p>
+                                            </li>
+                                          </ul>
+                                          <br>
+                                          <p dir="ltr">Programming : sudo make -f hello.mic.45.make program-usbtiny </p>
+                                          <p dir="ltr">Checking USB Port : ls /dev/tty.usb* (for example : &ldquo;dev/tty.usbserial-FTF53NJC&rdquo;) </p>
+                                          <p dir="ltr">For visualization : python (hello.mic.45.py : filename) /dev/tty.usbserial-FTF3NJC</p>
+                                          <br>
+                                          <h2 dir="ltr">TESTING PCB</h2>
+                                          <div dir="ltr">
+                                            <table width="320" border="5" cellspacing="5" cellpadding="5">
+                                              <tr>
+                                                <td><div align="center"><img src="images/10-6.jpg" alt="" width="320" height="320"></div></p></td>
+                                                <td><div align="center"><img src="images/10-7.jpg" alt="" width="320" height="320"></div></p></td>
+                                              </tr>
+                                              <tr>
+                                                <td><p align="center"dir="ltr"><strong>Board ( input &amp; touchpad)</strong></p></td>
+                                                <td><p align="center"dir="ltr"><strong>Touchpad - closer view </strong></p></td>
+                                              </tr>
+                                            </table>
+                                          </div>
+                                          <br>
+                                          <br>
+                                          <div dir="ltr">
+                                            <table width="320" border="5" cellspacing="5" cellpadding="5">
+                                            <tr>
+                                                <td><div align="center"><img src="images/10-8.jpg" alt="" width="320" height="320"></div></p></td>
+                                                <td><div align="center"><iframe width="360" height="360" src="https://www.youtube.com/embed/AGnm-TxfjI4" frameborder="0" allowfullscreen></iframe></div></td>
+                                              <td><div align="center"><iframe width="360" height="360" src="https://www.youtube.com/embed/Yt_lL_kHEXw" frameborder="0" allowfullscreen></iframe></div></td>
+                                              </tr>
+                                              <tr>
+                                                <td><p align="center"dir="ltr"><strong>TXRX - not working </strong></p></td>
+                                                <td><p align="center"dir="ltr"><strong>VIDEO : TXRX GOING UNSTABLE</strong></p></td>
+                                                <td><p align="center"dir="ltr"><strong>VIDEO : CHECKING STEP RESPONSE</strong></p></td>
+                                              </tr>
+                                            </table>
+                                          </div>
+                                          <br>
+                                          <p dir="ltr"> No matter how many times I&rsquo;ve tried the bar graph didn&rsquo;t make any positive change and after several try I&rsquo;ve only noticed peak change ( around &nbsp;one digit) which was just useless. </p>
+                                          <p dir="ltr"> I&rsquo;ve noticed my board is not in perfect shape as and the TXRX also so therefore I&rsquo;ve quickly milled Neil&rsquo;s board to check if my board is the main cause of the situation.</p>
+                                          <br>
+                                          <p dir="ltr"> However, the interaction of txrx touchpad wasn&rsquo;t stable therefore the number was unpredictable. Which wasn&rsquo;t good for controlling any output devices. &nbsp;I think my board is unstable in comparison between other guys. What I was thinking about was gradually getting increased values. Therefore I&rsquo;m looking at again at my board and with bumpy lines and stains that may affect the copper I&rsquo;ll try with the new txrx board design that is not touchpad and looks like pin-shaped humidity sensor.<br>
+                                          </p>
+                                          <p dir="ltr"> This time was showing progress as I got to see changing in values but as I have concerned It&rsquo;s making digit that is not steady. Normally I&rsquo;ve seen changing values of starting point at ZERO and as the copper area is increased the value on the screen goes up to 4 digits.                                          </p>
+                                          <p dir="ltr">----After processing assignment --- </p>
+                                          <p dir="ltr">As I was having problem with &nbsp;input device which the number is very unstable I decided to make it more stable. The problem with the first txrx board was that I wasn&rsquo;t able to get gradient in number(what I mean is number gradually arise with my movement) </p>                            <p dir="ltr">Therefore, I had to find very simple copper tape made txrx board to test that the number stays according the input. I quickly made female wired headers to connect copper tape.</p>
+                                          <br>
+                                          <p dir="ltr"> </p>
+                                          <br>
+                                          <div dir="ltr">
+                                            <table width="320" border="5" cellspacing="5" cellpadding="5">
+                                              <tr>
+                                                <td><div align="center"><img src="images/10-9.jpg" alt="" width="320" height="320"></div></p></td>
+                                                <td><div align="center"><img src="images/10-10.jpg" alt="" width="320" height="320"></div></p></td>
+                                                <td><div align="center"><img src="images/10-11.jpg" alt="" width="320" height="320"></div></p></td>
+                                              </tr>
+                                              <tr>
+                                                <td><p align="center" dir="ltr"><strong>copper tape on CARDBOARD</strong></p></td>
+                                                <td><p align="center" dir="ltr"><strong>copper-taper wire</strong></p></td>
+                                                <td><p align="center" dir="ltr"><strong>step.response with txrx</strong></p></td>
+                                              </tr>
+                                            </table>
+                                          </div>
+
+                                          <div align="center"><p dir="ltr"><iframe width="640" height="390" src="https://www.youtube.com/embed/RYUbcVY5HF4" frameborder="0" allowfullscreen></iframe></div></p>
+                                          <h2 dir="ltr">Humidity Sensor </h2>
+                                          <p dir="ltr"> I just need a 2X1 SMD pin-out component and outer design. I looked closely at humidity sensor module and therefore, I&rsquo;m going to use DIY sensor. for the TXRX I get the idea of when the copper is saturated with water it suppose to change value. </p>
+                                          <br>
+                                          <div dir="ltr">
+                                            <table width="320" border="5" cellspacing="5" cellpadding="5">
+                                              <tr>
+                                                <td><div align="center"><img src="images/10-12.jpg" alt="" width="320" height="320"></div></p></td>
+                                                <td><div align="center"><img src="images/10-13.png" alt="" width="320" height="320"></div></p></td>
+                                              </tr>
+                                              <tr>
+                                                <td><p align="center" dir="ltr"><strong>commercial humidity sensor</strong></p></td>
+                                                <td><p align="center" dir="ltr"><strong>Schematic of humi.sch</strong></p></td>
+                                              </tr>
+                                              <tr>
+                                                <td><div align="center"><img src="images/10-14.png" alt="" width="320" height="320"></div></p></td>
+                                                <td><div align="center"><img src="images/10-15.jpg" alt="" width="320" height="320"></div></p></td>
+                                              </tr>
+                                              <tr>
+                                                <td><p align="center" dir="ltr"><strong>image trace done in gimp</strong></p></td>
+                                                <td><p align="center" dir="ltr"><strong>humi board milled with SRM-20</strong></p></td>
+                                              </tr>
+                                            </table>
+                                          </div>
+                                          <br>
+                                          <div dir="ltr">
+                                            <table width="320" border="5" cellspacing="5" cellpadding="5">
+                                              <tr>
+                                                <td><div align="center"><iframe width="640" height="390" src="https://www.youtube.com/embed/9b5KWWX4bNo" frameborder="0" allowfullscreen></iframe></div></td>
+                                              </tr>
+                                              <tr>
+                                                <td><p align="center" dir="ltr">--- VIDEO of HUMIDITY SENSOR WORKING ---</p></td>
+                                              </tr>
+                                            </table>
+                                          </div>
+                                          <h2 dir="ltr">What i did … </h2>
+                                          <p dir="ltr"> Photo shown above is for making humidity sensors. I recognized 6 pin headers, &nbsp;1xLED, capacitors and several resistors with microprocessors. Basically my redesigned board will be digital fabricated design of humidity sensor with recycle materials or just the copper board. </p>
+                                          <p dir="ltr">As shown above the commercial product has micro controller but &nbsp;as my board is designed and I only need to wire the TXRX (my own pcb Board). That&rsquo;s why I simply used eagle to make surface mount of 2 pin (I had to use eagle to export image as in PCB size) </p>
+                                          <p dir="ltr"> I&rsquo;ve created image and extended canvas size the size that I want for the SRM-20 to mill the board. With the white traces that I want to make it as a reactive part for humidity &nbsp;I&rsquo;ve used illustrator to create traces and re-edit on GIMP for making outlines. </p>
+                                          <br>
+                                          <h2 dir="ltr">What i learned … </h2>
+                                          <p dir="ltr"> I haven't got a chance with diffrent programming language however I had enought of trial in making a board with different design, checking the traces and approving at which state the traces are cut in clear status. By the looks of it, design rule check is very important at firs, and condition of end-mill must be in good-shape with certain maintenance. With double-sided tape to hold the copperboard, the end-mill can be affected by the adhesive material and it must be cleaned everytime for the next user</p>
+                                          <p dir="ltr"> Sometimes the end-mill just skate above the copper board which means it just make a glimpse of a trace and not cutting thoroughly. When it happens it was wise to just pause the CNC machine and start with a new z-axis. And when doing the NEW toolpath be sure to give some force to the copper with a hand</p>
+                                          </section>
+                                        
+									</article>
+
+							</div>
+						</div>
+					</div>
+					<div class="row 200%">
+						<div class="12u">
+
+							<!-- Features -->
+								<section class="box features">
+									<h2 class="major"><span>Download files</span></h2>
+									<div>
+										<div class="row">
+											<div class="3u">
+												
+												<!-- Feature -->
+													<section class="box feature">
+														<a href="https://drive.google.com/file/d/0BzGgyuLqbu0FWkRra2w1eE55OWc/view?usp=sharing" class="image featured"><img src="images/10-2.jpg"  alt="" width="250" height="280" /></a>
+														<h3><a href="https://drive.google.com/file/d/0BzGgyuLqbu0FWkRra2w1eE55OWc/view?usp=sharing">input_device2.zip</a></h3>
+														<p> TXRX first trial (connecting with touchpad)</p>
+													</section>
+										
+											</div>
+											<div class="3u">
+												
+												<!-- Feature -->
+													<section class="box feature">
+														<a href="https://drive.google.com/file/d/0BzGgyuLqbu0FZmxhTklzWEpCN2s/view?usp=sharing" class=""><img src="images/10-15.jpg" alt="" width="250" height="280"></a>
+														<h3><a href="https://drive.google.com/file/d/0BzGgyuLqbu0FZmxhTklzWEpCN2s/view?usp=sharing">humi sensor.zip</a></h3>
+														<p>
+															DIY humidity sensor made with GIMP&Eagle
+														</p>
+													</section>
+										
+											</div>
+											<div class="3u">
+                                           		
+                                                <!-- Feature -->
+													<section class="box feature">
+														<a href="https://drive.google.com/file/d/0BzGgyuLqbu0FaWpxa1ZnWXBKTDQ/view?usp=sharing" class=""><img src="images/10-5.png" alt="" width="250" height="280"/></a>
+														<h3><a href="https://drive.google.com/file/d/0BzGgyuLqbu0FaWpxa1ZnWXBKTDQ/view?usp=sharing">txrx(redesign).zip</a></h3>
+														<p>
+															re-design of step.responsed board	
+                                                        </p>
+													</section>
+										
+											</div>
+											<div class="3u">
+                                            	<!-- Feature -->
+													<section class="box feature">
+														<a href="https://drive.google.com/file/d/0BzGgyuLqbu0FVm1aU2lza2g4aTA/view?usp=sharing" class=""><img src="images/10-14.png" alt="" width="250" height="280" /></a>
+														<h3><a href="https://drive.google.com/file/d/0BzGgyuLqbu0FVm1aU2lza2g4aTA/view?usp=sharing">humi(illues).png</a></h3>
+														<p>
+															DIY humidity sensor png file	
+                                                        </p>
+													</section>
+										
+											</div>
+											<div class="3u">
+												
+													</section>
+										
+											</div>
+										</div>
+										
+									</div>
+								</section>
+
+						</div>
+					</div>
+				</div>
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer" class="container">
+				<div class="row 100%">
+					<div class="12u">
+
+						<!-- Contact -->
+							<section>
+								<h2 class="major"><span>Get in touch</span></h2>
+								<ul class="contact">
+						<li><a href="https://twitter.com/mata8989" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+						<li><a href="https://www.facebook.com/yongwoo.song.37" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+						<li><a href="https://www.linkedin.com/profile/view?id=357221551&trk=nav_responsive_tab_profile" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
+						<li><a href="https://plus.google.com/u/2/106321315644670974097/posts" class="icon fa-google-plus"><span class="label">Google+</span></a></li>
+								</ul>
+							</section>
+					
+					</div>
+				</div>
+
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul class="menu">
+						<li>&copy; Fab Academy 2015 'How to make almost Anything'. All rights reserved</li><li>Design:Yongwoo Song</li>
+						</ul>
+					</div>
+
+			</footer>
+
+	</body>
+</html>

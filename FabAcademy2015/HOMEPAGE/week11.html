@@ -1,0 +1,254 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Week 11 : Output devices</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
+		<script src="js/jquery.min.js"></script>
+		<script src="js/jquery.dropotron.min.js"></script>
+		<script src="js/skel.min.js"></script>
+		<script src="js/skel-layers.min.js"></script>
+		<script src="js/init.js"></script>
+		<noscript>
+			<link rel="stylesheet" href="css/skel.css" />
+			<link rel="stylesheet" href="css/style.css" />
+			<link rel="stylesheet" href="css/style-desktop.css" />
+		</noscript>
+		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
+	</head>
+	<body>
+
+		<!-- Header -->
+			<header id="header">
+				<div class="logo container">
+					<div>
+						<h1><a href="index.html" id="logo">FAB ACADEMY 2015</a></h1>
+						<p>Yongwoo Song</p>
+					</div>
+				</div>
+			</header>
+
+		<!-- Nav -->
+			<nav id="nav" class="skel-layers-fixed">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li class="current">
+						<a href="">Assignments</a>
+						<ul>
+                        	<li><a href="week1.html">Week1 : Principles and practices, project management</a></li>
+							<li><a href="week2.html">Week2 : Computer-aided design</a></li>
+                        	<li><a href="week3.html">Week3 : Computer-controlled cutting</a></li>
+                            <li><a href="week4.html">Week4 : Electronics production</a></li>
+                            <li><a href="week5.html">Week5 : 3D scanning and printing</a></li>
+                            <li><a href="week6.html">Week6 : Electronics design</a></li>
+                            <li><a href="week7.html">Week7 : Embedded programming</a></li>
+                            <li><a href="week8.html">Week8 : Computer controlled machining</a></li>
+                            <li><a href="week9.html">Week9 : Molding and casting</a></li>
+                            <li><a href="week10.html">Week10 : Input devices</a></li>
+                            <li><a href="week11.html">Week11 : Output devices</a></li>
+                            <li><a href="week12.html">Week12 : Composites</a></li>
+                            <li><a href="week13.html">Week13 : Network and communication</a></li>
+                            <li><a href="week14.html">Week14 : Interface and application programming</a></li>
+                            <li><a href="week15.html">Week15 : Applications and implications</a></li>
+                            <li><a href="week16.html">Week16 : Mechanical design, machine design</a></li>
+                            <li><a href="week17.html">Week17 : invention,intellectual property and income</a></li>
+                            
+ 							<li><a href="project.html">Final Project</a></li>
+
+						</ul>
+					</li>
+					
+				  <li><a href="aboutme.html">About me</a></li>
+				</ul>
+			</nav>
+		
+		<!-- Main -->
+			<div id="main-wrapper">
+				<div id="main" class="container">
+					<div class="row">
+						<div class="12u">
+							<div class="content">
+							
+								<!-- Content -->
+						
+									<article class="box page-content">
+
+										<!-- Week assignment --> 
+										<header>
+											<h2>11. Output devices </h2>
+											<p> Add an output device to a microcontroller board you've designed and program it to do something </p>
+										</header>
+									
+                                        <!-- Fab Documentatioin -->
+                                        <section>
+                                          <p dir="ltr">Board Trial </p>
+                                          <ol>
+                                            <li dir="ltr">
+                                              <p dir="ltr">Try the board that is already designed and programme it </p>
+                                            </li>
+                                            <li dir="ltr">
+                                              <p dir="ltr">Re-design the board of my own design to do something // Stepper motor </p>
+                                            </li>
+                                          </ol>
+                                          <p dir="ltr">For this week, I wanted to try the bi-polar stepper motor circuit as to build axes control with the motors. </p>
+                                          <p dir="ltr">Sally Williams page says that another fab.lbr contains A4953 part and it&rsquo;s necessary for my board. I looked at her electronic design configuration and it was exactly what i needed for my project. Controlling board with clockwise and anti-clockwise direction I&rsquo;ll be able to control my axes in x, y axes as i intended to control. </p>
+                                          <p dir="ltr">Now I&rsquo;m always checking my design to be sure about clearance and less time doing self cutting traces after the milling. </p>
+                                          <p dir="ltr">With the board adding 2 switches I wanted to try clockwise and anti-clockwise but with all finished artwork of PCB board I didn&rsquo;t know that DC motor is difficult to control in the way that i intended. This happened with lack of knowledge of my electronic &nbsp;background.</p>
+                                          <p dir="ltr">-----------------------------</p>
+                                          <p dir="ltr">Under update </p>
+                                          <p dir="ltr">----------------------------- &nbsp;</p>
+                                          <p dir="ltr">Since my last misunderstanding between DC motors and stepping motors components alignment I&rsquo;m down to the stepper motors </p>
+                                          <p dir="ltr"> I wanted to use the FabKit (a.k.a Fabduino) and connect multiple output devices to do something that I intend to do. Therefore, It was important for me to do some trial with hello.stepper bipolar and DC motor for trying output device.</p>
+                                          <p dir="ltr"> Before connecting I needed to programme my FabKit as usable and with ISP and hand-made connectors carefully see the position of RST and for me I first located RST and GND of two boards.</p>
+                                          <p dir="ltr">Just before, removing the components and redesigning the board I had to learn basic electronic components theory such as capacitors connected with IC controller and what IC controller does. For IC controller now I see the component as &lsquo;smart&rsquo;,&rsquo;multiple&rsquo; switches &nbsp;by which means It&rsquo;s just a normal switch inside tells the power(or electric current) to flow in 0,1 directions. </p>
+                                          <p dir="ltr">BE CAUTIOUS </p>
+                                          <p dir="ltr"> It was important to check the voltage to run stepper.motor as I&rsquo;ve already seen a smoke when connected with my laptop. It was kind of a surprise since I knew there should be power cut inside laptop that prevents overcurrent for safe issue. It was therefore important to keep an eye on it and be ready to pull the pin out to save my board. </p>
+                                          <p dir="ltr"> First, I checked on a hello.stepper bipolar board design to know which components can be removed or can be stayed to get the board working </p>
+                                          <p dir="ltr"> I renamed the JP3 and JP4 file to head it to the bottom IC so named the wires as &lsquo;OUT3&rsquo; &amp; &lsquo;OUT4&rsquo;</p>
+                                          <p dir="ltr"> By finishing the design of my stepper.motor I found a serious problem with sharing voltage between IC1 and IC2, with current design above the above IC1 gets the power from FabDuino which is around 5V and the bottom IC2 gets the power from outer supply of 12V which could kill the motor from one of them. &nbsp;Additional problem with the board is that the wire that is connected to the power GND is too narrow and by far which I&rsquo;ve asked from the professor or my other colleague for 1mm it is capable of letting 1A of current.</p>
+                                          <p dir="ltr"> One more thing that i switched for good connections was to change the 2 pin headers that is same with other 6 Pin and GND VCC header which I already have done with making FabDuino.</p>
+                                          <p dir="ltr"> Therefore, with research and help from the instructor I routed my decision to not add components and share the same voltage by correcting the IN1 of both motors. </p>
+                                          <p dir="ltr">This is the board with shared voltage in both IC &lsquo;s and will be used as a controller of my two stepper motors to do CORE XY movement. I&rsquo;ll be making another board named for &lsquo;STEPPER2&rsquo; and connect with FabDuino . </p>
+                                          <p dir="ltr">As I mentioned before, I looked up the FabKit information and checked for FTDI cable layout and Digital pin position and for me I want to use D2,D3 …. D7 for stepper board. &nbsp;&nbsp;I </p>
+                                          <p dir="ltr">I looked again for tutorial and got reminder again that the Fabduino gets the power supply of 5V from FTDI cable for powering the board and programme it with Arduino IDE.</p>
+                                          <p dir="ltr">For programming the board I need a configuration in the setting of boards.txt &nbsp;file which is the shown setting of an Arduino IDE.</p>
+                                          <p dir="ltr">This kind of error happens as far as I&rsquo;ve found with googling is bad connection that Arduino is not connecting with software </p>
+                                          <p dir="ltr">------------ </p>
+                                          <p dir="ltr">Test the stepper motor </p>
+                                          <p dir="ltr">-----------</p>
+                                          <p dir="ltr">(movie) - before changing the port value </p>
+                                          <p dir="ltr">// I had two problem which the power supply not making the voltage that I want, which i thought at first was the breakdown of the power supply. The stepper motor was not making the continuous turn that I was intending and making strange &lsquo;squeaky&rsquo; sound which is definitely that something is going wrong. </p>
+                                          <p dir="ltr">I fixed first problem with power supply by correcting the knob with the current and giving it a be cautious about rising the voltage. </p>
+                                          <p dir="ltr">Second problem was fixed by checking the stepper board I&rsquo;ve made and I could see the data pin which connects with the stepper motor hasn&rsquo;t been soldered properly so I made sure the solder gets under the pin with more than enough solder to make sure I don&rsquo;t lose connection.</p>
+                                          <p dir="ltr">Then I changed the motor pins&rsquo; value to D2, D3, D5, D6, D7 and removed the sentence that wasn&rsquo;t necessary for testing. </p>
+                                          <p dir="ltr">int motor pin = 2; // D2 connect with PA0 &nbsp;&nbsp;</p>
+                                          <p dir="ltr">int motor pin = 3; // D3 connect with PA1</p>
+                                          <p dir="ltr">int motor pin = 5;// D5 connect with PA2 </p>
+                                          <p dir="ltr">int motor pin = 6;// D6 connect with PA3 </p>
+                                          <p dir="ltr">int motor pin = 7;// D7 connect with PA4 </p>
+                                          <p dir="ltr"># I&rsquo;m still not sure why my colleague encouraged me to leave out the fourth pin of FabKit therefore I still need to find out what&rsquo;s the problem is with using the D4 pin.</p>
+                                          <p dir="ltr">Just as i finished the testing with first stepper board I made exactly the same the second board to make additional connection to the FabKit. this time I used the pinout for D8, D9, D11, D12, D13 for &nbsp;the second stepper motor. </p>
+                                          <p dir="ltr">Programming the board was to connect the FTDI and get the power from the computer and additional 12V from power. </p>
+                                          <div align="center"><iframe src="https://player.vimeo.com/video/129901710" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> <p><a href="https://vimeo.com/129901710">Stepper bipolar -syw Fabacadmey 2015</a> from <a href="https://vimeo.com/user36873355">Yong Woo Song</a> on <a href="https://vimeo.com">Vimeo</a></div></p>
+                                          <p dir="ltr">(movie) Trying the motor moving with one stepper programmed. </p>
+                                          <p dir="ltr">The stepper motor now moves with continuous and with steady pace. </p>
+                                          <p dir="ltr">(movie) Trying the motor with other sets of digital pinouts </p>
+                                          <p dir="ltr">I have to make sure that all of my digital pin is working correctly and my stepper board and FabKit is working at the same time. </p>
+                                          <p dir="ltr">With stepper motor smoothly working as i intended I check the Amperage by giving some reverse force to check how much current is needed for one motor and as my power supply was between 0.7 ~ 0.5 A I assume for my final project i need at least 2A of power.</p>
+                                         
+                                          
+                                          <p><iframe width="640" height="360" src="https://www.youtube.com/embed/BGb9Ilm3nC0?feature=player_detailpage" frameborder="0" allowfullscreen></iframe></p>
+                                          
+                                          It's finally done and now I can use it on my final project.
+                                        </section>
+                                        
+									</article>
+
+							</div>
+						</div>
+					</div>
+					<div class="row 200%">
+						<div class="12u">
+
+							<!-- Features -->
+								<section class="box features">
+									<h2 class="major"><span>Download files</span></h2>
+									<div>
+										<div class="row">
+											<div class="3u">
+												
+												<!-- Feature -->
+													<section class="box feature">
+														<a href="https://drive.google.com/open?id=0ByS34oWAJVkUR3EyZW5mWWQ4Nzg&authuser=0" class="image featured"><img src="images/download.png"  alt="" /></a>
+														<h3><a href="">output dc motor(two switches)</a></h3>
+														<p>
+															Eagle board sch
+														</p>
+													</section>
+										
+											</div>
+											<div class="3u">
+												
+												<!-- Feature -->
+													<section class="box feature">
+														<a href="https://drive.google.com/open?id=0ByS34oWAJVkUM2dlTkNxMl9YWHc&authuser=0" class="image featured"><img src="images/download.png" alt="" /></a>
+														<h3><a href="https://drive.google.com/open?id=0ByS34oWAJVkUR3EyZW5mWWQ4Nzg&authuser=0">output dc motor(two switches)</a></h3>
+														<p>
+															board file Output stepper bipolar(syw)
+														</p>
+													</section>
+										
+											</div>
+											<div class="3u">
+                                            		<!-- Feature -->
+													<section class="box feature">
+														<a href="https://drive.google.com/open?id=0ByS34oWAJVkUb1dQbHpJUUVPQzg&authuser=0" class="image featured"><img src="images/download.png" alt="" /></a>
+														<h3><a href="https://drive.google.com/open?id=0ByS34oWAJVkUb1dQbHpJUUVPQzg&authuser=0">output stepper bipolar sch</a></h3>
+														<p>
+															Schematic file for bipolar(syw)
+														</p>
+													</section>
+										
+											</div>
+											<div class="3u">
+												
+												
+													</section>
+										
+											</div>
+										</div>
+										
+									</div>
+								</section>
+
+						</div>
+					</div>
+				</div>
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer" class="container">
+				<div class="row 100%">
+					<div class="12u">
+
+						<!-- About -->
+							<section>
+								<h2 class="major"><span> References </span></h2>
+								<p>
+									<li>leaf chair <a href="https://twitter.com/mata8989">superb work done by fab academy student</a></li>
+								</p>
+							</section>
+
+					</div>
+				</div>
+				<div class="row 200%">
+					<div class="12u">
+
+						<!-- Contact -->
+							<section>
+								<h2 class="major"><span>Get in touch</span></h2>
+								<ul class="contact">
+						<li><a href="https://twitter.com/mata8989" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+						<li><a href="https://www.facebook.com/yongwoo.song.37" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+						<li><a href="https://www.linkedin.com/profile/view?id=357221551&trk=nav_responsive_tab_profile" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
+						<li><a href="https://plus.google.com/u/2/106321315644670974097/posts" class="icon fa-google-plus"><span class="label">Google+</span></a></li>
+								</ul>
+							</section>
+					
+					</div>
+				</div>
+
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul class="menu">
+						<li>&copy; Fab Academy 2015 'How to make almost Anything'. All rights reserved</li><li>Design:Yongwoo Song</li>
+						</ul>
+					</div>
+
+			</footer>
+
+	</body>
+</html>

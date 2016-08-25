@@ -1,0 +1,321 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Week9 : Molding and casting</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
+		<script src="js/jquery.min.js"></script>
+		<script src="js/jquery.dropotron.min.js"></script>
+		<script src="js/skel.min.js"></script>
+		<script src="js/skel-layers.min.js"></script>
+		<script src="js/init.js"></script>
+		<noscript>
+			<link rel="stylesheet" href="css/skel.css" />
+			<link rel="stylesheet" href="css/style.css" />
+			<link rel="stylesheet" href="css/style-desktop.css" />
+		</noscript>
+		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
+	</head>
+	<body>
+
+		<!-- Header -->
+			<header id="header">
+				<div class="logo container">
+					<div>
+					  <h1><a href="index.html" id="logo">FAB ACADEMY 2015</a></h1>
+						<p>Yongwoo Song</p>
+					</div>
+				</div>
+			</header>
+
+		<!-- Nav -->
+			<nav id="nav" class="skel-layers-fixed">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li class="current">
+						<a href="">Assignments</a>
+						<ul>
+                        	<li><a href="week1.html">Week1 : Principles and practices, project management</a></li>
+							<li><a href="week2.html">Week2 : Computer-aided design</a></li>
+                        	<li><a href="week3.html">Week3 : Computer-controlled cutting</a></li>
+                            <li><a href="week4.html">Week4 : Electronics production</a></li>
+                            <li><a href="week5.html">Week5 : 3D scanning and printing</a></li>
+                            <li><a href="week6.html">Week6 : Electronics design</a></li>
+                            <li><a href="week7.html">Week7 : Embedded programming</a></li>
+                            <li><a href="week8.html">Week8 : Computer controlled machining</a></li>
+                            <li><a href="week9.html">Week9 : Molding and casting</a></li>
+                            <li><a href="week10.html">Week10 : Input devices</a></li>
+                            <li><a href="week11.html">Week11 : Output devices</a></li>
+                            <li><a href="week12.html">Week12 : Composites</a></li>
+                            <li><a href="week13.html">Week13 : Network and communication</a></li>
+                            <li><a href="week14.html">Week14 : Interface and application programming</a></li>
+                            <li><a href="week15.html">Week15 : Applications and implications</a></li>
+                            <li><a href="week16.html">Week16 : Mechanical design, machine design</a></li>
+                            <li><a href="week17.html">Week17 : invention,intellectual property and income</a></li>
+                            
+ 							<li><a href="project.html">Final Project</a></li>
+
+						</ul>
+					</li>
+					
+				  <li><a href="aboutme.html">About me</a></li>
+				</ul>
+			</nav>
+		
+		<!-- Main -->
+			<div id="main-wrapper">
+				<div id="main" class="container">
+					<div class="row">
+						<div class="12u">
+							<div class="content">
+							
+								<!-- Content -->
+						
+									<article class="box page-content">
+
+										<!-- Week assignment --> 
+										<header>
+											<h2>9. Molding and Casting </h2>
+											<p> Design a 3D mold ,machine it, and cast parts from it </p>
+										</header>
+									
+                                        <!-- Fab Documentatioin -->
+                                        <section>
+                                          <h2 dir="ltr">3D Design of mold</h2>
+                                          <table width="320" border="5" cellspacing="5" cellpadding="5">
+                                              <tr>
+                                                <td><div align="center"><img src="images/9-1.jpg" alt="" width="480" height="400"></div></p></td>
+                                                <td><div align="center"><img src="images/9-plan.jpg" alt="" width="480" height="400"></div></p></td>
+                                              </tr>
+                                              <tr>
+                                                <td><p align="center" dir="ltr"><strong>e-machineshop made vector image</strong></p></td>
+                                                <td><p align="center" dir="ltr"><strong>Rough sketch for gear mold</strong></p></td>
+                                              </tr>
+                                              <tr>
+                                                <td>&nbsp;</td>
+                                                <td>&nbsp;</td>
+                                              </tr>
+                                          </table>
+                                              <p dir="ltr">At first i got a recommendation of using the open source for making tools as there are lots of measurements and tolerance to think about when actually using the gear in real life. I've downloaded e-machineshop program that i searched on the net. exported as ai image and on illustator exported as dxf file to open on vCarvePro </p>
+                                              <p dir="ltr">----------- At this time I wasn't sure how to fix problem with open vector image on VCarve, therefore I changed it to the program that I can make 3D mold gear myself. I 'm right now kind of got used to fixingthe problem of vector image.</p>
+                                          
+                                          <table width="320" border="5" cellspacing="5" cellpadding="5">
+                                              <tr>
+                                                <td><div align="center"><img src="images/9-2.jpg" alt="" width="360" height="360"></div></p></td>
+                                                <td><div align="center"><img src="images/9-3.jpg" alt="" width="360" height="360"></div></p></td>
+                                                <td><div align="center"><img src="images/9-4.jpg" alt="" width="360" height="360"></div></p></td>
+                                              </tr>
+                                              <tr>
+                                                <td><p align="center" dir="ltr"><strong>Rotating sketch(for teeth) extruding</strong></p></td>
+                                                <td><p align="center" dir="ltr"><strong>Sketching the teeth for gear</strong></p></td>
+                                                <td><p align="center" dir="ltr"><strong>Sketching the teeth for gear</strong></p></td>
+                                              </tr>
+                                          </table>
+                                              </p>
+                                              <p>This is me checking the toolpath on Fab Modules. I tried to use the fab modules to make shp files and use was as a mold</p>
+                                          <p>&nbsp;</p>
+                                              <h2 dir="ltr"> Making mold with CNC                                          </h2>
+                                          <table width="320" border="5" cellspacing="5" cellpadding="5">
+                                             <tr>
+                                               <td><div align="center"><img src="images/9-5.jpg" alt="" width="480" height="400"></div></p></td>
+                                               <td><div align="center"><img src="images/9-6.jpg" alt="" width="480" height="400"></div></p></td>
+                                            </tr>
+                                             <tr>
+                                               <td><p align="center" dir="ltr"><strong>Rotating sketch(for teeth) extruding</strong></p></td>
+                                               <td><p align="center" dir="ltr"><strong>Sketching the teeth for gear</strong></p></td>
+                                             </tr>
+                                          </table>
+                                         
+                                              <p> I'ved tried to upload my stl file to fab modules to check the toolpath for roughing and cutting. The problem happend when i was uploading the file on Moldea 4.0X program that it scaled my model file by 1/10 and therefore the program couldn't make path between the teeth and I found that It initiates my model size by 1/10 ratio. I couldn't find out why it does so right now I'm manually putting the extra zeros to makeit in real-size the i measured
+                                              </p>
+                                              <p dir="ltr">I had to change my mold as i had to use other CNC machine 'model MDX-40A' by Roland and obviously i forgot to bring my molding wax to the Creative Device Lab which is other makerspace where i often dropby using the other machine I could accurately cut out the teeth of my molding design. I used two kinds of drills '1. 3pi round 2leaves drill for ROUGHING 2. 1.5 pi round 2leaves for finishing. The material that i used was chemical wood that i coould use as a leftovers. I've measured six different width,length and heights. </p>
+                                          <table width="320" border="5" cellspacing="5" cellpadding="5">
+                                              <tr>
+                                                <td><div align="center"><img src="images/9-7.jpg" alt="" width="480" height="400"></div></p></td>
+                                                <td><div align="center"><img src="images/9-8.jpg" alt="" width="480" height="400"></div></p></td>
+                                              </tr>
+                                              <tr>
+                                                <td><p align="center" dir="ltr"><strong>CNC cutting in progress</strong></p></td>
+                                                <td><p align="center" dir="ltr"><strong>CNC cutting (finishing)</strong></p></td>
+                                              </tr>
+                                          </table>
+                                              <p dir="ltr">The finished cut of 3pi roughing toolpath and It made a lot of mess. and as the Roland MDX 40A can cut the model in 3D it's going to finish the rough cut by rotating the block in 180 degrees. </p>
+                                          <table width="320" border="5" cellspacing="5" cellpadding="5">
+                                              <tr>
+                                                <td><div align="center"><img src="images/9-cncmold.jpg" alt="" width="480" height="400"></div></p></td>
+                                                <td><div align="center"><img src="images/9-mold.jpg" alt="" width="480" height="400"></div></p></td>
+                                              </tr>
+                                              <tr>
+                                                <td><p align="center" dir="ltr"><strong>Mold made out of ShopBot</strong></p></td>
+                                                <td><p align="center" dir="ltr"><strong>Mold made out of MDX 40-A</strong></p></td>
+                                              </tr>
+                                          </table>
+                                          <p dir="ltr">From experience with making the mold with Plywood and Shoptbot on the left, I had a failure of not thinking thoroughly about height. Next time, Therefore, from MDX-40A I made sure the height is well good enough for making the mold and making it sure to have decent height for casting at the end. </p>
+                                              <h3 dir="ltr">Preparing mold</h3>
+                                          
+                                                                                        </p>
+                                              <p dir="ltr">I mixed both silicon PART A which is main material and PART B (curling agent) by the ratio of 10 : 1, measured with electric scale and to mix 42g of PART A and 4g of curling agent. </p>
+
+                                          <div align="center">
+                                          <table width="320" border="5" cellspacing="5" cellpadding="5">
+                                              <tr>
+                                                <td><div align="center"><img src="images/9-9.jpg" alt="" width="480" height="400"></div></p></td>
+                                                <td><div align="center"><img src="images/9-mold2.jpg" alt="" width="480" height="400"></div></p></td>
+                                              </tr>
+                                              <tr>
+                                                <td><p align="center" dir="ltr"><strong>Part A &amp; Part B of silicon</strong></p></td>
+                                                <td><p align="center" dir="ltr"><strong>Mold(complete) </strong></p></td>
+                                              </tr>
+                                              <tr>
+                                                <td><div align="center"><img src="images/9-10.jpg" alt="" width="480" height="400"></div></p></td>
+                                                <td><div align="center"><img src="images/9-11.jpg" alt="" width="480" height="400"></div></p></td>
+                                              </tr>
+                                              <tr>
+                                                <td><p align="center" dir="ltr"><strong>Bubble fixed</strong></p></td>
+                                                <td><p align="center" dir="ltr"><strong>Pouring Silicon done</strong></p></td>
+                                              </tr>
+                                          </table>
+                                          </div>
+                                              <p>
+                                          </p>
+                                              </p>
+                                              <p dir="ltr"> With less care and the condition of silicon I've made lots of bubbles and it's not looking great. I did trick that was told by everyone which is &nbsp;banging the whole plate to the desk about 100 times more or less to make my last effort. The silicon-can that i used was already opened and used by other users so i guess maybe the silicon was not in a perfect state for use however I think it's better to take lots of care when pouring the material and take lots of effort. </p>
+                                              <p dir="ltr"> In conclusion it didn&rsquo;t matter if I had used pre-opened silicon what so ever, the most important thing is to make thinnest thread and give it a careful try not to make air bubbles inside. No rush and take it very slow when you are dealing with delicate toolpaths. Such as mine needed a toolpath for gears so therefore, It was necessary to check the mill and the modeling file I&rsquo;ve designed.</p>
+                                              <p>&nbsp;</p>
+                                              <h3 dir="ltr">Molding and casting process </h3>
+                                          <table width="320" border="5" cellspacing="5" cellpadding="5">
+                                              <tr>
+                                                <td><div align="center"><img src="images/9-12.jpg" alt="" width="480" height="400"></div></p></td>
+                                                <td><div align="center"><iframe width="640" height="400" src="https://www.youtube.com/embed/FDHbzy_0fcI" frameborder="0" allowfullscreen></iframe></div></p></td>
+                                              </tr>
+                                              <tr>
+                                                <td><p align="center" dir="ltr"><strong>Checking with scale 10 : 1 (Part A : Part B)</strong></p></td>
+                                                <td><p align="center" dir="ltr"><strong>Molding casting video</strong></p></td>
+                                              </tr>
+                                          </table>
+                                          
+                                              </p>
+                                          <p dir="ltr">Pouring technique is necesaary At first, I couldn't quite get how much of silicon that i needeed to cover all my mold. when pouring the silicon i had to squeeze and make a thinnest thread i can make so it takes time but the good thing is that i can always check the status of bubbles.                                          </p>
+                                          <p dir="ltr"></p>
+                                              <h3 dir="ltr"> cASTing</h3>
+                                              <table width="320" border="5" cellspacing="5" cellpadding="5">
+                                              <tr>
+                                                <td><div align="center"><img src="images/9-a.jpg" alt="" width="480" height="400"></div></p></td>
+                                                <td><div align="center"><img src="images/9-b.jpg" alt="" width="480" height="400"></div></p></td>
+                                              </tr>
+                                              <tr>
+                                                <td><p align="center" dir="ltr"><strong>Leftover filament of PLA</strong></p></td>
+                                                <td><p align="center" dir="ltr"><strong>Filament in cooking pot</strong></p></td>
+                                              </tr>
+                                              <tr>
+                                                <td><div align="center"><img src="images/9-c.jpg" alt="" width="480" height="400"></div></p></td>
+                                                <td><div align="center"><img src="images/9-13.jpg" alt="" width="480" height="400"></div></p></td>
+                                              </tr>
+                                              <tr>
+                                                <td><p align="center" dir="ltr"><strong>Hardened PLA </strong></p></td>
+                                                <td><p align="center" dir="ltr"><strong>Casting of Silicon in final mold</strong></p></td>
+                                              </tr>
+                                              </table>
+                                              <p dir="ltr"> For casting which I've done after the regional review was done, I wanted to try something new trial with making the cast. Which is using the leftover filament in Fab Lab Seoul. I managed to get some filament just enought amount that i need to make the cast. However, As I was heating the cooking pot with heat gun, I felt something as going wrong and I didn't have no idea of getting the melted filament to pour as it driied and hardened in just a blink of an eye. </p>
+                                              <p dir="ltr">&nbsp;</p>
+                                          <p dir="ltr">Another failure was making the cast  in same material, I knew somhoew using the same material was going to make parts stuck togetehr, but since the mold was too old and I wanted to try If it's going to work and there is another failure my mold and cast in just one unibody impossible for me detach. However, As shown on the pictrue the teeth of a mold is still alive and not attached like a whole thing. I wanted to tryout my mold but as you can see the as I tried the mold in the same material It's very stuck and I can only get the gear out with separating with knives or other thing                                          </p>
+                                              <p dir="ltr">&nbsp;</p>
+                                              <h2 dir="ltr"> what i did ... </h2>
+                                              <p dir="ltr">CAD Design : Autodesk Inventor</p>
+                                              <p dir="ltr">eMachineshop : Opensource gear program</p>
+                                              <p dir="ltr">Wooden Mold : Shopbot</p>
+                                              <p dir="ltr">Molding Wax : Roland SRM-20</p>
+                                              <p dir="ltr">Chemical wood cutting : Roland MDX 40-A</p>
+                                              <p>Silicon molding : Shin-etsu silioncs (PART A &amp; PART B)</p>
+                                              <p>PLA melting : Fab Lab Seoul PLABS blue pla filamnet for casting</p>
+                                        </section>
+                                        
+									</article>
+
+							</div>
+						</div>
+					</div>
+					<div class="row 200%">
+						<div class="12u">
+
+							<!-- Features -->
+								<section class="box features">
+									<h2 class="major"><span>Download files</span></h2>
+									<div>
+										<div class="row">
+											<div class="3u">
+												
+												
+												
+												<!-- Feature -->
+													<section class="box feature">
+														<a href="https://drive.google.com/file/d/0BzGgyuLqbu0FdjZUSEpoamR4Mzg/view?usp=sharing" class="image featured"><img src="images/9-4.jpg" alt="" /></a>
+														<h3><a href="https://drive.google.com/file/d/0BzGgyuLqbu0FdjZUSEpoamR4Mzg/view?usp=sharing">GEAR MOLD</a></h3>
+														<p>
+															GEAR MOLD.stl files
+														</p>
+													</section>
+										
+											</div>
+											<div class="3u">
+												
+												
+													</section>
+										
+											</div>
+										</div>
+										
+									</div>
+								</section>
+
+						</div>
+					</div>
+				</div>
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer" class="container">
+				<div class="row 100%">
+					<div class="12u">
+
+						<!-- About -->
+							<section>
+								<h2 class="major"><span> References </span></h2>
+								<p>
+									<li>leaf chair <a href="https://twitter.com/mata8989">superb work done by fab academy student</a></li>
+								</p>
+							</section>
+
+					</div>
+				</div>
+				<div class="row 200%">
+					<div class="12u">
+
+						<!-- Contact -->
+							<section>
+								<h2 class="major"><span>Get in touch</span></h2>
+								<ul class="contact">
+						<li><a href="https://twitter.com/mata8989" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+						<li><a href="https://www.facebook.com/yongwoo.song.37" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+						<li><a href="https://www.linkedin.com/profile/view?id=357221551&trk=nav_responsive_tab_profile" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
+						<li><a href="https://plus.google.com/u/2/106321315644670974097/posts" class="icon fa-google-plus"><span class="label">Google+</span></a></li>
+								</ul>
+							</section>
+					
+					</div>
+				</div>
+
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul class="menu">
+						<li>&copy; Fab Academy 2015 'How to make almost Anything'. All rights reserved</li><li>Design:Yongwoo Song</li>
+						</ul>
+					</div>
+
+			</footer>
+
+	</body>
+</html>

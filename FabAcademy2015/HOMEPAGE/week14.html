@@ -1,0 +1,247 @@
+<!DOCTYPE HTML>
+<!--
+	
+-->
+<html>
+	<head>
+		<title>week14 : Interface and application programming</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
+		<script src="js/jquery.min.js"></script>
+		<script src="js/jquery.dropotron.min.js"></script>
+		<script src="js/skel.min.js"></script>
+		<script src="js/skel-layers.min.js"></script>
+		<script src="js/init.js"></script>
+		<noscript>
+			<link rel="stylesheet" href="css/skel.css" />
+			<link rel="stylesheet" href="css/style.css" />
+			<link rel="stylesheet" href="css/style-desktop.css" />
+		</noscript>
+		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
+	</head>
+	<body>
+
+		<!-- Header -->
+			<header id="header">
+				<div class="logo container">
+					<div>
+						<h1><a href="index.html" id="logo">FAB ACADEMY 2015</a></h1>
+						<p>Yongwoo Song</p>
+					</div>
+				</div>
+			</header>
+
+		<!-- Nav -->
+			<nav id="nav" class="skel-layers-fixed">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li class="current">
+						<a href="">Assignments</a>
+						<ul>
+                        	<li><a href="week1.html">Week1 : Principles and practices, project management</a></li>
+							<li><a href="week2.html">Week2 : Computer-aided design</a></li>
+                        	<li><a href="week3.html">Week3 : Computer-controlled cutting</a></li>
+                            <li><a href="week4.html">Week4 : Electronics production</a></li>
+                            <li><a href="week5.html">Week5 : 3D scanning and printing</a></li>
+                            <li><a href="week6.html">Week6 : Electronics design</a></li>
+                            <li><a href="week7.html">Week7 : Embedded programming</a></li>
+                            <li><a href="week8.html">Week8 : Computer controlled machining</a></li>
+                            <li><a href="week9.html">Week9 : Molding and casting</a></li>
+                            <li><a href="week10.html">Week10 : Input devices</a></li>
+                            <li><a href="week11.html">Week11 : Output devices</a></li>
+                            <li><a href="week12.html">Week12 : Composites</a></li>
+                            <li><a href="week13.html">Week13 : Network and communication</a></li>
+                            <li><a href="week14.html">Week14 : Interface and application programming</a></li>
+                            <li><a href="week15.html">Week15 : Applications and implications</a></li>
+                            <li><a href="week16.html">Week16 : Mechanical design, machine design</a></li>
+                            <li><a href="week17.html">Week17 : invention,intellectual property and income</a></li>
+                            
+ 							<li><a href="project.html">Final Project</a></li>
+
+						</ul>
+					</li>
+					
+				  <li><a href="aboutme.html">About me</a></li>
+				</ul>
+			</nav>
+		
+		<!-- Main -->
+			<div id="main-wrapper">
+				<div id="main" class="container">
+					<div class="row">
+						<div class="12u">
+							<div class="content">
+							
+								<!-- Content -->
+						
+									<article class="box page-content">
+
+										<!-- Week assignment --> 
+										<header>
+											<h2>14. Interface and Application Programming</h2>
+											<p> write and application that interfaces with an input/output device </p>
+										</header>
+									
+                                        <!-- Fab Documentatioin -->
+                                        <section>
+                                          <p dir="ltr"> This is my first time doing processing and by the looks of something can be easily done with little bit of learning the code. However, I learned from the past experience that it&rsquo;s better to look over references of other&rsquo;s work and modify it. </p>
+                                          <p dir="ltr"> My special thanks to Gabriella Gardosi whom i met in Barcelona when i was in trip. she did some magnificent work which I had huge amount of help </p>
+                                          <br>
+                                          <p dir="ltr"> However in the beginning, by looking at the the simple tutorial from processing official site I&rsquo;m learning how the processing works. My first example was to make moving circle and when mouse button is clicked the circle is turned into black. I try to use my mouse button as making the circle to move in the direction that I want, and for the size of a circle I&rsquo;d like to try my txrx board. </p>
+                                          <br>
+                                          <div dir="ltr">
+                                            <table>
+                                              <tr>
+                                                <td><div align="center"><img src="images/14-1.jpg" alt="" width="320" height="320"></td>
+                                                <td><div align="center"><img src="images/14-2.jpg" alt="" width="320" height="320"></td>
+                                                <td><div align="center"><img src="images/14-3.jpg" alt="" width="320" height="320"></td>
+                                              </tr>
+                                              <tr>
+                                                <td><p align="center" dir="ltr"><strong>SERIAL COMMUNICATION CONCEPT</strong></p></td>
+                                                <td><p align="center" dir="ltr"><strong>MOUSEPRESS() , TEST</strong></p></td>
+                                                <td><p align="center" dir="ltr"><strong>CIRCLE MOVING EXAMPLE</strong></p></td>
+                                              </tr>
+                                            </table>
+                                          </div>
+                                          <p>I had to learn the concept of processing since my last trial the computer just froze and did nothing. So I needed to learn how processing is different from arduino.</p>
+                                          <p>Obviously I thought of the process too complex at first, all I needed to do is to set variable and make certain background what I call the 'working space' and in void draw() statement , I call the serial input and set the usbtiny destination by  [ myPort = new Serial(this, &quot;/dev/tty.usbserial-A603UEXU&quot;, 9600); ] // on Windows the statement after tty is differently shown like COM.<br>
+                                          </p>
+                                          <p dir="ltr">transmit is hooked up with receiver and same happens with vice versa. serial communication often happens between -15 ~ +15 volts. &nbsp;Basic knowledge quickly learned from youtube tutorial. </p>
+                                          <br>
+                                          <br>
+                                          <h2 dir="ltr">Frozen? why ?                                          </h2>
+                                          <div dir="ltr">
+                                            <table>
+                                              <tr>
+                                                <td><div align="center"><img src="images/14-4.jpg" alt="" width="480" height="400"></td>
+                                                <td><div align="center"><img src="images/14-5.jpg" alt="" width="480" height="400"></td>
+                                              </tr>
+                                              <tr>
+                                                <td><p align="center" dir="ltr"><strong>NOT STABLE TXRX</strong></p></td>
+                                                <td><p align="center" dir="ltr"><strong>ERROR MSG : NEGATIVE WIDTH</strong></p></td>
+                                              </tr>
+                                            </table>
+                                          </div>
+                                          <p dir="ltr"> </p>
+                                          <p dir="ltr"> Quick try with the code downloaded, of course there is a problem. I didn&rsquo;t expect to have no problem. I looked closely at the coding of processing and by the looks of it because my values are jumping when touched with both hands. it creates a negative value which the stroke can not be made. (&ldquo; error message : negative width &ldquo;) stop the application</p>
+                                          <p dir="ltr"> </p>
+                                          <br>
+                                          <div dir="ltr">
+                                            <table><tr>
+                                              <td><div align="center"><img src="images/14-6.jpg" alt="" width="480" height="400"></td>
+                                              <td><div align="center"><img src="images/14-7.jpg" alt="" width="480" height="400"></td>
+                                              </tr>
+                                              <tr>
+                                                <td><p align="center" dir="ltr"><strong>LOGICAL STATEMENT</strong></p></td>
+                                                <td><p align="center" dir="ltr"><strong>CONDITIONAL STATEMENT</strong></p></td>
+                                              </tr>
+                                            </table>
+                                          </div>
+                                          <br>
+                                          <p dir="ltr"> Looking closely at the coding of past work. I sensed there are lines for making subtraction in on_value and off_value. I looked at the description of statement and I realized that if change the if statement I can temporarily fix the problem </p>
+                                          <br>
+                                          <p dir="ltr">before &nbsp;: </p>
+                                          <p dir="ltr"> &nbsp;if ((mousePressed == true) {</p>
+                                          <p dir="ltr"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;float &nbsp;x1 = map(diff_value, 0, 10000, 1, 100);</p>
+                                          <p dir="ltr"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;strokeWeight(x1);</p>
+                                          <p dir="ltr"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;line(pmouseX, pmouseY, mouseX, mouseY);</p>
+                                          <p dir="ltr"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;println(&quot;A VALUE IS &quot; + x1); </p>
+                                          <br>
+                                          <p dir="ltr">after : </p>
+                                          <p dir="ltr"> &nbsp;<em><strong>if ((mousePressed == true) &amp;&amp; (diff_value &gt; 0)) {</strong></em></p>
+                                          <p dir="ltr"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;float &nbsp;x1 = map(diff_value, 0, 10000, 1, 100);</p>
+                                          <p dir="ltr"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;strokeWeight(x1);</p>
+                                          <p dir="ltr"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;line(pmouseX, pmouseY, mouseX, mouseY);</p>
+                                          <p dir="ltr"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;println(&quot;A VALUE IS &quot; + x1); </p>
+                                          <br>
+                                          <div dir="ltr">
+                                            <table>
+                                            <tr>
+                                                <td><div align="center"><img src="images/14-8.jpg" alt="" width="480" height="400"></td>
+                                                <td><div align="center"><img src="images/14-9.jpg" alt="" width="480" height="400"></td>
+                                              </tr>
+                                              <tr>
+                                                <td><p align="center" dir="ltr"><strong>VARYING STROKE WEIGHT (DOING TESTING)</strong></p></td>
+                                                <td><p align="center" dir="ltr"><strong>DRAWING WRITING WITH MOUSE(WITH FIXED CODE)</strong></p></td>
+                                              </tr>
+                                            </table>
+                                          </div>
+                                          <br>
+                                          <h2 dir="ltr">What I learned … </h2>
+                                          <p dir="ltr"> First, when I installed processing I didn&rsquo;t know how to work even with simple code of serial importing. Now i know that It&rsquo;s just another tool just like Arduino to do something with visual thing. Understanding how to define variables for later on usage for subtraction I got lucky to get some good example for coding. I Stll got some problem with not properly making with smooth lines and I'll be looking more at codes to solve problem with coding. However, It's my instinct that I there are some limitation to fix the problem I guess my problem must be fixed in input device beforehands</p>
+                                          <br>
+                              </section>
+                                        
+									<!-- Features -->
+								<section class="box features">
+									<h2 class="major"><span>Download files</span></h2>
+									<div>
+										<div class="row">
+											<div class="3u">
+												
+												<!-- Feature -->
+													<section class="box feature">
+													  <a href="https://drive.google.com/folderview?id=0BzGgyuLqbu0Ffm1vRmNDczVGNWNEYmI4bExrYnRZUmw5MzZZVDZEd3cwNGVFUGpYZ1hVNUk&usp=sharing" class="image featured"><img src="images/14-5.jpg" width"280" height="200" alt="" /></a>
+														<h3><a href="https://drive.google.com/folderview?id=0BzGgyuLqbu0Ffm1vRmNDczVGNWNEYmI4bExrYnRZUmw5MzZZVDZEd3cwNGVFUGpYZ1hVNUk&usp=sharing">Mouse_line</a></h3>
+														<p>PDE : mouse_line (processing file) </p>
+													</section>
+										
+											</div>
+											<div class="3u">
+                                            
+												
+										</div>
+										
+									</div>
+								</section>
+
+						</div>
+					</div>
+				</div>
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer" class="container">
+				<div class="row 100%">
+					<div class="12u">
+
+						<!-- About -->
+							<section>
+								<h2 class="major"><span> References </span></h2>
+								<p>
+									
+								</p>	
+							</section>
+
+					</div>
+				</div>
+				<div class="row 200%">
+					<div class="12u">
+
+						<!-- Contact -->
+							<section>
+								<h2 class="major"><span>Get in touch</span></h2>
+								<ul class="contact">
+						<li><a href="https://twitter.com/mata8989" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+						<li><a href="https://www.facebook.com/yongwoo.song.37" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+						<li><a href="https://www.linkedin.com/profile/view?id=357221551&trk=nav_responsive_tab_profile" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
+						<li><a href="https://plus.google.com/u/2/106321315644670974097/posts" class="icon fa-google-plus"><span class="label">Google+</span></a></li>
+								</ul>
+							</section>
+					
+					</div>
+				</div>
+
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul class="menu">
+						<li>&copy; Fab Academy 2015 'How to make almost Anything'. All rights reserved</li><li>Design:Yongwoo Song</li>
+						</ul>
+					</div>
+
+			</footer>
+
+	</body>
+</html>

@@ -1,0 +1,241 @@
+<!DOCTYPE HTML>
+<!--
+	TXT by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>week13 : Network and communication</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
+		<script src="js/jquery.min.js"></script>
+		<script src="js/jquery.dropotron.min.js"></script>
+		<script src="js/skel.min.js"></script>
+		<script src="js/skel-layers.min.js"></script>
+		<script src="js/init.js"></script>
+		<noscript>
+			<link rel="stylesheet" href="css/skel.css" />
+			<link rel="stylesheet" href="css/style.css" />
+			<link rel="stylesheet" href="css/style-desktop.css" />
+		</noscript>
+		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
+	</head>
+	<body>
+
+		<!-- Header -->
+			<header id="header">
+				<div class="logo container">
+					<div>
+						<h1><a href="index.html" id="logo">FAB ACADEMY 2015</a></h1>
+						<p>Yongwoo Song</p>
+					</div>
+				</div>
+			</header>
+
+		<!-- Nav -->
+			<nav id="nav" class="skel-layers-fixed">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li class="current">
+						<a href="">Assignments</a>
+						<ul>
+                        	<li><a href="week1.html">Week1 : Principles and practices, project management</a></li>
+							<li><a href="week2.html">Week2 : Computer-aided design</a></li>
+                        	<li><a href="week3.html">Week3 : Computer-controlled cutting</a></li>
+                            <li><a href="week4.html">Week4 : Electronics production</a></li>
+                            <li><a href="week5.html">Week5 : 3D scanning and printing</a></li>
+                            <li><a href="week6.html">Week6 : Electronics design</a></li>
+                            <li><a href="week7.html">Week7 : Embedded programming</a></li>
+                            <li><a href="week8.html">Week8 : Computer controlled machining</a></li>
+                            <li><a href="week9.html">Week9 : Molding and casting</a></li>
+                            <li><a href="week10.html">Week10 : Input devices</a></li>
+                            <li><a href="week11.html">Week11 : Output devices</a></li>
+                            <li><a href="week12.html">Week12 : Composites</a></li>
+                            <li><a href="week13.html">Week13 : Network and communication</a></li>
+                            <li><a href="week14.html">Week14 : Interface and application programming</a></li>
+                            <li><a href="week15.html">Week15 : Applications and implications</a></li>
+                            <li><a href="week16.html">Week16 : Mechanical design, machine design</a></li>
+                            <li><a href="week17.html">Week17 : invention,intellectual property and income</a></li>
+                            
+ 							<li><a href="project.html">Final Project</a></li>
+
+						</ul>
+					</li>
+					
+				  <li><a href="aboutme.html">About me</a></li>
+				</ul>
+			</nav>
+		
+		<!-- Main -->
+			<div id="main-wrapper">
+				<div id="main" class="container">
+					<div class="row">
+						<div class="12u">
+							<div class="content">
+							
+								<!-- Content -->
+						
+									<article class="box page-content">
+
+										<!-- Week assignment --> 
+										<header>
+											<h2>13. Network and communication</h2>
+											<p> Design and build a wired &/or wireless network connecting at least two processors</p>
+										</header>
+									
+                                        <!-- Fab Documentatioin -->
+                                        <section>
+                                          <h2 dir="ltr">Hello Serial Bus Trial </h2>
+                                          <p dir="ltr">First I wanted to try Neil&rsquo;s board in order to find out how board and node is working between two connections. As my FabISP was fixed just this week, i think i&rsquo;ll be able to use my own FabISP this time. This week is about networking and to do it, I've made 2 nodes and 1 bridge to test the node blinking. [serial bus networking] </p>
+                                          <table width="320" border="5" cellspacing="5" cellpadding="5">
+                                              <tr>
+                                                <td><div align="center"><img src="images/13-1.jpg" alt="" width="360" height="360"></div></p></td>
+                                                <td><div align="center"><img src="images/13-2.jpg" alt="" width="360" height="360"></div></p></td>
+                                                <td><div align="center"><img src="images/13-3.jpg" alt="" width="360" height="360"></div></p></td>
+                                            </tr>
+                                              <tr>
+                                                <td><p align="center" dir="ltr"><strong>CHECKING THE BOARD</strong></p></td>
+                                                <td><p align="center" dir="ltr"><strong>USING 4 PIN HEADER</strong></p></td>
+                                                <td><p align="center" dir="ltr"><strong>FTDI CONNECTED</strong></p></td>
+                                            </tr>
+                                          </table>
+                                          <p><div align="center"></div>
+                                          <p dir="ltr">Looking at the reference done at the AS220 labs in 2012 I tried the Hello.serial bus and before modifying it I first wanted to check if it works as a bridge and nodes. Strangely enough even though the connection is well connected it acted different </p>
+                                          <div align="center"></div></p>
+                                          <h2 dir="ltr"></h2>
+                                          <h2 dir="ltr">Programming</h2>
+                                          <ul>
+                                            <li dir="ltr">
+                                              <p dir="ltr">#define node_id &lsquo;0&rsquo; &nbsp;// change the node id to &lsquo;1&rsquo;, &lsquo;2&rsquo; for the connected nodes </p>
+                                            </li>
+                                          </ul>
+                                          <ul>
+                                            <li dir="ltr">
+                                              <p dir="ltr">sudo make -f hello.bus.45.make program-usbtiny</p>
+                                            </li>
+                                          </ul>
+                                          <table width="320" border="5" cellspacing="5" cellpadding="5">
+                                              <tr>
+                                                <td><div align="center"><img src="images/13-4.jpg" alt="" width="360" height="360"></div></p></td>
+                                                <td><div align="center"><img src="images/13-5.jpg" alt="" width="360" height="360"></div></p></td>
+                                            </tr>
+                                              <tr>
+                                                <td><p align="center" dir="ltr"><strong>DESIGNATE THE NODE NUMBER</strong></p></td>
+                                                <td><p align="center" dir="ltr"><strong>CHECKING RESULT ON ARDUINO IDE</strong></p></td>
+                                            </tr>
+                                          </table>
+                                          <h2 dir="ltr">What I did and what i learned .... </h2>
+                                          <p dir="ltr">I&rsquo;ve changed the node for all three boards and make sure it&rsquo;s in line. Bridge as &lsquo;0&rsquo; , node 1 as &lsquo;1&rsquo; and node 2 as &lsquo;2&rsquo; and wired all in one connection and made sure the GND and VCC is in same location.Basically the whole idea is when press the '0' the whole board blinks and when '1' and '2' are put into serial monitor designated node blinks. What I learned from this assignment was that I can now designate as many boards that i want and transmit/receive the data.</p>
+                                          <div align="center"></div></p>
+                                          Failure : shortage ? mystery
+                                          <p dir="ltr"> I&rsquo;m still not sure what made a problem about connecting the board with computer, after shutting down the laptop about five times, and adjusting connection by hand. Suddenly out of nowhere, it works and I still don&rsquo;t find why it works. (I&rsquo;ve made a new board and replaced the components to recycle it). I </p>
+                                          <p dir="ltr">After several trial and changing usb cable and FTDI connectors I&rsquo;ve managed to make the node to blink. Still wondering what was the problem before.                                          </p>
+                                          <div align="center"></div>
+                                          <div align="center"><p dir="ltr"><iframe width="640" height="360" src="https://www.youtube.com/embed/hvVEinDLt8M?feature=player_detailpage" frameborder="0" allowfullscreen></iframe></div></p>
+                                          <p dir="ltr">(Video : working on hello serial bus) </p>
+                                          <p dir="ltr"> Adding some touch sensor is what I&rsquo;m trying to do for later on. Therefore, in my imagination I may be ready to send signal from customized touchpad on my own to the final destination that i want or something much more far. To sum up, python coding is one of the disaster that can happen to non-programmer knowledge background. Reason why I think is difficult is that Python is so stablized that It's not easy to change settings or coding the way I want. It happens all the time every time I change the code It gives me the serious error message. Therefore in the future, I may have learn every single detail of python that I need for the future .</p>
+                                          
+                                          
+                                       
+                                        </section>
+                                        
+									</article>
+
+							</div>
+						</div>
+					</div>
+					<div class="row 200%">
+						<div class="12u">
+
+							<!-- Features -->
+								<section class="box features">
+									<h2 class="major"><span>Download files</span></h2>
+									<div>
+										<div class="row">
+											<div class="3u">
+												
+												<!-- Feature -->
+													<section class="box feature">
+														<a href="#" class="image featured"><img src="images/download.png" alt="" /></a>
+														<h3><a href="#">Redesigned board(Networking)</a></h3>
+														<p>
+															
+														</p>
+													</section>
+										
+											</div>
+											<div class="3u">												
+																			
+												<!-- Feature -->
+													<section class="box feature">
+														<a href="#" class="image featured"><img src="images/download.png" alt="" /></a>
+														<h3><a href="#">And One More</a></h3>
+														<p>
+															files description
+														</p>
+													</section>
+										
+											</div>
+										</div>
+										
+									</div>
+								</section>
+
+						</div>
+					</div>
+				</div>
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer" class="container">
+				<div class="row 100%">
+					<div class="12u">
+
+						<!-- About -->
+							<section>
+								<h2 class="major"><span> References </span></h2>
+								<p>
+									<li>Hello Serial Bus making at AS220 <a href="http://academy.cba.mit.edu/2012/labs/providence/tutorials/15.html">superb work done by fab academy student</a></li>
+                                    <li>Hello Serial Bus closer look at components <a href="
+http://fabacademy.org/archives/2013/students/yuichi.hirose/14.html"> High resolution photo included </a></li>
+									<li>Hello Radio.16<a href="http://fab.cba.mit.edu/content/projects/comm/hello_radio/"> Hello radio </a></li>
+                                    <li>IC2 Connection done <a href="http://fabacademy.org/archives/2015/as/students/ashman.bry/week_13/"> IC2 </a></li>
+                                    <li> Hello serial & Breaking dancing motor <a href="http://fabacademy.org/archives/2015/eu/students/lepage-richer.theo/pages/13networking.html"> reference </a></li>
+                                    <li> I2C Protocol <a href="http://fabacademy.org/archives/2015/eu/students/dibitonto.massimiliano/13-networking.html
+"> FabLab Madrid, Massimiliano doing it on white breadboard </a></li>
+								</p>
+							</section>
+
+					</div>
+				</div>
+				<div class="row 200%">
+					<div class="12u">
+
+						<!-- Contact -->
+							<section>
+								<h2 class="major"><span>Get in touch</span></h2>
+								<ul class="contact">
+						<li><a href="https://twitter.com/mata8989" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+						<li><a href="https://www.facebook.com/yongwoo.song.37" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+						<li><a href="https://www.linkedin.com/profile/view?id=357221551&trk=nav_responsive_tab_profile" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
+						<li><a href="https://plus.google.com/u/2/106321315644670974097/posts" class="icon fa-google-plus"><span class="label">Google+</span></a></li>
+								</ul>
+							</section>
+					
+					</div>
+				</div>
+
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul class="menu">
+						<li>&copy; Fab Academy 2015 'How to make almost Anything'. All rights reserved</li><li>Design:Yongwoo Song</li>
+						</ul>
+					</div>
+
+			</footer>
+
+	</body>
+</html>
