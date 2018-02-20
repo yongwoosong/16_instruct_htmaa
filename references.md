@@ -27,3 +27,7 @@
 * http://www.altium.com/documentation/15.1/display/ADES/((The+Board))_AD
 * Understanding 'vias' http://www.interfacebus.com/Dictionary-of-Printed-Circuit-vias-in-high-speed-design.html
 
+
+
+### embedded programming
+Arduino IDE development in 'ATOM' https://www.viget.com/articles/arduino-development-in-atom-editor/
