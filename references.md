@@ -31,3 +31,7 @@
 
 ### embedded programming
 Arduino IDE development in 'ATOM' https://www.viget.com/articles/arduino-development-in-atom-editor/
+
+
+### Applications and Implications
+* How to make Opensource project : https://open-source-guide.18f.gov/writing-clear-and-concise-issues/
