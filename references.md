@@ -35,6 +35,7 @@
 
 ### embedded programming
 Arduino IDE development in 'ATOM' https://www.viget.com/articles/arduino-development-in-atom-editor/
+<<<<<<< HEAD
 greatwork from Fab Lab Kamakura (showing all )
 http://fab.academany.org/2018/labs/fablabkamakura/students/daisuke-doyo/assignments/week09.html
 
@@ -42,3 +43,9 @@ http://fab.academany.org/2018/labs/fablabkamakura/students/daisuke-doyo/assignme
 Hydro stone work from MIT student making 4 Parts mold 
 - shows good reason not to 3D Print your mold but to make
 http://fab.cba.mit.edu/classes/863.14/people/merav_gazit/project-07.html
+=======
+
+
+### Applications and Implications
+* How to make Opensource project : https://open-source-guide.18f.gov/writing-clear-and-concise-issues/
+>>>>>>> 07d377b36e1870f2d79153bdefb4aa896cd5c805
