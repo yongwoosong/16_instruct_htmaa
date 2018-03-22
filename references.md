@@ -3,7 +3,7 @@
 * https://getbootstrap.com/
 * https://bootswatch.com/
 * http://strapdownjs.com/
-* https://guides.github.com/features/mastering-markdown/ 
+* https://guides.github.com/features/mastering-markdown/
 
 ### Week 3: computer-aided design
 * Fusion 360 Youtube Channel: https://www.youtube.com/user/AutodeskFusion360
@@ -20,14 +20,25 @@
 * FabISP references. http://fab.cba.mit.edu/classes/863.16/doc/tutorials/FabISP/FabISP_Demystified.html
 * PCB production references. http://fab.cba.mit.edu/classes/863.16/doc/projects/ftsmin/index.html
 * Soldering tutorial, https://makezine.com/2016/02/19/learn-simple-surface-mount-soldering-in-collins-lab/
-* Modela 20X user guide: http://support.rolanddga.com/docs/documents/departments/technical%20services/manuals%20and%20guides/mdx-20-15_use_english_r5.pdf 
+* Modela 20X user guide: http://support.rolanddga.com/docs/documents/departments/technical%20services/manuals%20and%20guides/mdx-20-15_use_english_r5.pdf
 * PCB Basics: https://learn.sparkfun.com/tutorials/pcb-basics
-* http://blog.bantamtools.com/milling-pcbs 
+* http://blog.bantamtools.com/milling-pcbs
 * https://support.bantamtools.com/hc/en-us/sections/115001027886-PCB-Workflow
 * http://www.altium.com/documentation/15.1/display/ADES/((The+Board))_AD
 * Understanding 'vias' http://www.interfacebus.com/Dictionary-of-Printed-Circuit-vias-in-high-speed-design.html
+#### new methods research
+* [nothinglabs](http://www.nothinglabs.com/no-etch-circuit-boards-on-your-laser-printer/) detailed information about silverpaste inkjet printer for making circuits. note! silver epoxy is very expensive
+* [silver Epoxy](https://www.amazon.com/s/ref=nb_sb_noss?url=search-alias%3Daps&field-keywords=AA-DUCT+AD1)
+* []
 
 
 
 ### embedded programming
 Arduino IDE development in 'ATOM' https://www.viget.com/articles/arduino-development-in-atom-editor/
+greatwork from Fab Lab Kamakura (showing all )
+http://fab.academany.org/2018/labs/fablabkamakura/students/daisuke-doyo/assignments/week09.html
+
+### Molding and Casting
+Hydro stone work from MIT student making 4 Parts mold 
+- shows good reason not to 3D Print your mold but to make
+http://fab.cba.mit.edu/classes/863.14/people/merav_gazit/project-07.html
