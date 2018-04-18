@@ -24,12 +24,22 @@
 * PCB Basics: https://learn.sparkfun.com/tutorials/pcb-basics
 * http://blog.bantamtools.com/milling-pcbs
 * https://support.bantamtools.com/hc/en-us/sections/115001027886-PCB-Workflow
-* http://www.altium.com/documentation/15.1/display/ADES/((The+Board))_AD
+* http://www.altium.com/documentation/15.1/display/ADES/((The+Board))
+
+* Making FabFTDI
+the content has both ATtiny45 Atmega16U2 version
+* [FabFTDI, ATtiny45](http://fab.cba.mit.edu/classes/863.16/doc/projects/FabFTDI/FabFTDI.html)
+There is typo when making fuse command 'euse' to 'efuse' be sure to check terminal command after
+
+
 * Understanding 'vias' http://www.interfacebus.com/Dictionary-of-Printed-Circuit-vias-in-high-speed-design.html
 #### new methods research
 * [nothinglabs](http://www.nothinglabs.com/no-etch-circuit-boards-on-your-laser-printer/) detailed information about silverpaste inkjet printer for making circuits. note! silver epoxy is very expensive
 * [silver Epoxy](https://www.amazon.com/s/ref=nb_sb_noss?url=search-alias%3Daps&field-keywords=AA-DUCT+AD1)
 * []
+
+Making Satsha-ttl for the FTDI connectiion
+https://github.com/satsha-utilities/satsha-ttl
 
 
 
@@ -39,13 +49,26 @@ Arduino IDE development in 'ATOM' https://www.viget.com/articles/arduino-develop
 greatwork from Fab Lab Kamakura (showing all )
 http://fab.academany.org/2018/labs/fablabkamakura/students/daisuke-doyo/assignments/week09.html
 
+### Output devices
+* [hello.stepper](http://fabacademy.org/archives/2013/students/yuichi.hirose/13.html)
+* [avr+stepper](http://archive.fabacademy.org/2017/fablabtecsup/students/413/assignments/w10/w10.html)
+* [all the output example](http://fab.cba.mit.edu/classes/863.15/section.CBA/people/Shtarbanov/week8.html)
+* [moving stepper](http://archive.fabacademy.org/2017/fablabtrivandrum/students/280/week10.html)
+* [will patrick](http://fab.cba.mit.edu/classes/863.13/people/wildebeest/projects/week10/index.html)
+
 ### Molding and Casting
-Hydro stone work from MIT student making 4 Parts mold 
+Hydro stone work from MIT student making 4 Parts mold
 - shows good reason not to 3D Print your mold but to make
 http://fab.cba.mit.edu/classes/863.14/people/merav_gazit/project-07.html
 =======
 
+making gypsum
 
 ### Applications and Implications
 * How to make Opensource project : https://open-source-guide.18f.gov/writing-clear-and-concise-issues/
 >>>>>>> 07d377b36e1870f2d79153bdefb4aa896cd5c805
+
+
+
+### Composites
+* where to buy materials : [FiberGlass](http://www.fiberman.co.kr/main/index)
